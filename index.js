@@ -92,12 +92,12 @@ class NPC extends Phaser.Physics.Arcade.Sprite {
     setCursorStyle() {
         this.on('pointerover', () => {
             if (this.playerInRange(this.scene.player)) {
-                this.input.setDefaultCursor('url(https://play.rosebud.ai/assets/hand_small_point.png?zJhd), pointer');
+                this.input.setDefaultCursor('url(https://play.rosebud.ai/assets/hand_small_point.png?pn3H), pointer');
             }
         });
 
         this.on('pointerout', () => {
-            this.input.setDefaultCursor('url(https://play.rosebud.ai/assets/cursor.png?j0pL), pointer');
+            this.input.setDefaultCursor('url(https://play.rosebud.ai/assets/cursor.png?tLg0), pointer');
         });
     }
 
@@ -155,11 +155,11 @@ class Menu extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background', `https://play.rosebud.ai/assets/rosebud_bg.png?yQ4J`);
-        this.load.audio('backgroundmusic', `https://play.rosebud.ai/assets/bgMusic.wav.wav?ASrw`);
+        this.load.image('background', `https://play.rosebud.ai/assets/rosebud_bg.png?gsXH`);
+        this.load.audio('backgroundmusic', `https://play.rosebud.ai/assets/bgMusic.wav.wav?YaQb`);
     
-        var newFont = new FontFace('font', 'url(' + `https://play.rosebud.ai/assets/Phased.ttf?ZZiA` + ')');
-        var font1 = new FontFace('font1', 'url(' + `https://play.rosebud.ai/assets/HeftyMe.ttf?OVqY` + ')');
+        var newFont = new FontFace('font', 'url(' + `https://play.rosebud.ai/assets/Phased.ttf?oocx` + ')');
+        var font1 = new FontFace('font1', 'url(' + `https://play.rosebud.ai/assets/HeftyMe.ttf?rCBz` + ')');
         newFont.load().then(function(loaded_face) {
             document.fonts.add(loaded_face);
         }).catch(function(error) {
@@ -214,36 +214,36 @@ class ChatScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background', 'https://play.rosebud.ai/assets/Multi-chat2.png?sPZi');
-        this.load.spritesheet('player', `https://play.rosebud.ai/assets/playerRun.png?ATPf`, {
+        this.load.image('background', 'https://play.rosebud.ai/assets/Multi-chat2.png?mKFw');
+        this.load.spritesheet('player', `https://play.rosebud.ai/assets/playerRun.png?6nKV`, {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('playerIdle', `https://play.rosebud.ai/assets/playerIdle.png?tjv8`, {
+        this.load.spritesheet('playerIdle', `https://play.rosebud.ai/assets/playerIdle.png?pYlH`, {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('tina', 'https://play.rosebud.ai/assets/npc3Idle.png?TWWj', {
+        this.load.spritesheet('tina', 'https://play.rosebud.ai/assets/npc3Idle.png?QbLu', {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('Anok', 'https://play.rosebud.ai/assets/Anok yai.png?fQje', {
+        this.load.spritesheet('Anok', 'https://play.rosebud.ai/assets/Anok yai.png?wP0o', {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('harold', 'https://play.rosebud.ai/assets/Npc 4 ke huy.png?F58L', {
+        this.load.spritesheet('harold', 'https://play.rosebud.ai/assets/Npc 4 ke huy.png?kS9R', {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('sam', `https://play.rosebud.ai/assets/npc4Idle.png?YlD9`, {
+        this.load.spritesheet('sam', `https://play.rosebud.ai/assets/npc4Idle.png?1EMN`, {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.image('scroll', `https://play.rosebud.ai/assets/dialogPanel.png?NfYl`);
-        this.load.audio('music', `https://play.rosebud.ai/assets/547542__bloodpixelhero__ancient-little-secret.mp3?yP9c`);
-        this.load.bitmapFont('m6x11plus', 'https://play.rosebud.ai/assets/m6x11plus.ttf?grMH'); // Load the custom font
+        this.load.image('scroll', `https://play.rosebud.ai/assets/dialogPanel.png?GuEa`);
+        this.load.audio('music', `https://play.rosebud.ai/assets/547542__bloodpixelhero__ancient-little-secret.mp3?OzJM`);
+        this.load.bitmapFont('m6x11plus', 'https://play.rosebud.ai/assets/m6x11plus.ttf?CRyh'); // Load the custom font
     
-        this.input.setDefaultCursor('url(https://play.rosebud.ai/assets/cursor.png?j0pL), pointer');
+        this.input.setDefaultCursor('url(https://play.rosebud.ai/assets/cursor.png?tLg0), pointer');
     }
 
     create() {
@@ -330,10 +330,10 @@ class ChatScene extends Phaser.Scene {
         this.sam.setInteractive();
         this.sam.setCursorStyle();
 
-        this.add.text(920, 240, 'Technology', { font: 'm6x11plus'}).setScale(2.75);
-        this.add.text(645, 240, 'Engineering', { font: 'm6x11plus'}).setScale(2.75);
-        this.add.text(200, 440, 'History & Culture', { font: 'm6x11plus'}).setScale(2.75);
-        this.add.text(530, 440, 'Science & Exploration', { font: 'm6x11plus'}).setScale(2.75);
+        this.add.text(920, 240, 'Nam Le', { font: 'm6x11plus'}).setScale(2.75);
+        this.add.text(645, 240, 'Anok Yai', { font: 'm6x11plus'}).setScale(2.75);
+        this.add.text(200, 440, 'Ke Huy Quan', { font: 'm6x11plus'}).setScale(2.75);
+        this.add.text(530, 440, 'Anni Albers', { font: 'm6x11plus'}).setScale(2.75);
         let ins = this.add.text(250, 160, '*Select NPCs to initiate conversation.', { font: 'm6x11plus'}).setScale(2.5);
         ins.setScrollFactor(0);
     }
