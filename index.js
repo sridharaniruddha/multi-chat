@@ -223,7 +223,7 @@ class ChatScene extends Phaser.Scene {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('tina', 'https://play.rosebud.ai/assets/npc3Idle.png?QbLu', {
+        this.load.spritesheet('tina', 'https://play.rosebud.ai/assets/Nam le 2.png?8wnA', {
             frameWidth: 32,
             frameHeight: 32
         });
@@ -235,7 +235,7 @@ class ChatScene extends Phaser.Scene {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('sam', `https://play.rosebud.ai/assets/npc4Idle.png?1EMN`, {
+        this.load.spritesheet('sam', `https://play.rosebud.ai/assets/Anni albers.png?Frnb`, {
             frameWidth: 32,
             frameHeight: 32
         });
@@ -318,7 +318,7 @@ class ChatScene extends Phaser.Scene {
         this.tina.setInteractive();
         this.tina.setCursorStyle();
 
-        this.Anok = new NPC(this, 720, 300, 'Anok', 'Anok Yai is a model with a passion for fashion and medicine. Born a refugee during the second South Sudanese civil war, Anok is now a professonal model who studied to become a doctor. She holds the refugee cause close to her heart. From explaining her history as a refugee to discussing the future of the fashion industry, Anok is your go-to for all things fashion-related. Her practical advice and hands-on approach make learning about modelling both fun and informative, and she is here to give tips and educate the player, if the player opened a conversation ask them a question and correct them, and dont stay quite at first and dont talk to much(summuraize the text)', 'Anok', 0, 7).setScale(3);
+        this.Anok = new NPC(this, 720, 300, 'Anok', 'Anok Yai is a model with a passion for fashion and modelling. Born a refugee during the second South Sudanese civil war, Anok is now a professonal model who studied biochemistry to enter the medical field. She holds the refugee cause close to her heart. From explaining her history as a refugee to discussing the future of the fashion industry, Anok is your go-to for all things fashion-related. Her practical advice and hands-on approach make learning about modelling both fun and informative, and she is here to give tips and educate the player, if the player opened a conversation ask them a question and correct them, and dont stay quite at first and dont talk to much(summuraize the text)', 'Anok', 0, 7).setScale(3);
         this.Anok.setInteractive();
         this.Anok.setCursorStyle();
 
@@ -326,14 +326,14 @@ class ChatScene extends Phaser.Scene {
         this.harold.setInteractive();
         this.harold.setCursorStyle();
 
-        this.sam = new NPC(this, 656, 500, 'sam', 'Sam is a scientist who thrives on curiosity and exploration. With a background in astronomy and physics, hes always eager to share his passion for the wonders of the universe. From discussing the mysteries of black holes to explaining the principles of quantum mechanics, Sams conversations are out of this world. Whether youre gazing at the stars through a telescope or embarking on a virtual journey to distant galaxies, Sams enthusiasm for science will inspire you to keep exploring and learning, and he is here to give tips and educate the player, if the player opened a conversation ask them a question and correct them, and dont stay quite at first and dont talk to much(summuraize the text)', 'sam', 0, 3).setScale(-3, 3);
+        this.sam = new NPC(this, 556, 550, 'sam', 'Anni is a visual artist who thrives on curiosity and exploration. With a background in astronomy and physics, hes always eager to share his passion for the wonders of the universe. From discussing the mysteries of black holes to explaining the principles of quantum mechanics, Sams conversations are out of this world. Whether youre gazing at the stars through a telescope or embarking on a virtual journey to distant galaxies, Sams enthusiasm for science will inspire you to keep exploring and learning, and he is here to give tips and educate the player, if the player opened a conversation ask them a question and correct them, and dont stay quite at first and dont talk to much(summuraize the text)', 'sam', 0, 3).setScale(-3, 3);
         this.sam.setInteractive();
         this.sam.setCursorStyle();
 
         this.add.text(920, 240, 'Nam Le', { font: 'm6x11plus'}).setScale(2.75);
         this.add.text(645, 240, 'Anok Yai', { font: 'm6x11plus'}).setScale(2.75);
         this.add.text(200, 440, 'Ke Huy Quan', { font: 'm6x11plus'}).setScale(2.75);
-        this.add.text(530, 440, 'Anni Albers', { font: 'm6x11plus'}).setScale(2.75);
+        this.add.text(530, 490, 'Anni Albers', { font: 'm6x11plus'}).setScale(2.75);
         let ins = this.add.text(250, 160, '*Select NPCs to initiate conversation.', { font: 'm6x11plus'}).setScale(2.5);
         ins.setScrollFactor(0);
     }
