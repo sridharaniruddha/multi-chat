@@ -227,7 +227,7 @@ class ChatScene extends Phaser.Scene {
             frameWidth: 32,
             frameHeight: 32
         });
-        this.load.spritesheet('anok', 'https://play.rosebud.ai/assets/Anok yai.png?fQje', {
+        this.load.spritesheet('Anok', 'https://play.rosebud.ai/assets/Anok yai.png?fQje', {
             frameWidth: 32,
             frameHeight: 32
         });
